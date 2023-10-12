@@ -1,3 +1,78 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+    background-color: #ccc;
+}
+
+
+.container {
+    width: 600px;
+	background-color: #201f1f;
+	color: #fff;
+	padding: 60px;
+	border-radius: 10px;
+	margin: 100px auto 0;
+}
+
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    background-color: #eaeaea;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+input[type="submit"] {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #eaeaea;;
+    color: #201f1f;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.delete-button {
+    margin-left: 10px;
+    padding: 2px 5px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    color: #ccc;
+    cursor: pointer;
+    font-size: 10px;
+}
